@@ -1,18 +1,12 @@
 #include <Elementary.h>
 
-static void
-on_click(void *data, Evas_Object *obj, void *event_info)
-{
-   elm_exit();
-}
-
 EAPI_MAIN int
 elm_main(int argc, char **argv)
 {
    Evas_Object *win = NULL, *image = NULL, *btn = NULL, *bx = NULL;
    char buf[PATH_MAX];
    elm_policy_set(ELM_POLICY_QUIT, ELM_POLICY_QUIT_LAST_WINDOW_CLOSED);
-   win = elm_win_util_standard_add("ex2", "Hello Elementary");
+   win = elm_win_util_standard_add("test", "Hello Elementary");
    elm_win_autodel_set(win, EINA_TRUE);
    
    bx = elm_box_add(win);
