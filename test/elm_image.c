@@ -23,11 +23,11 @@ elm_main(int argc, char **argv)
    snprintf(buf, sizeof(buf), "bodhilogo-simple.png");
 
    image = elm_image_add(win);
-   if (!elm_image_file_set(image, buf, NULL))
+    /*if (!elm_image_file_set(image, buf, NULL))
      {
         printf("error: could not load image \"%s\"\n", buf);
         return -1;
-     }
+     } */
    elm_image_file_set(image, NULL, NULL);
    evas_object_size_hint_weight_set(image, EVAS_HINT_EXPAND, EVAS_HINT_EXPAND);
    elm_win_resize_object_add(win, image);
